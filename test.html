@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\steve\Desktop\Ujatcare\atlas-frontend\statics\styles.css">
+    <script src="https://kit.fontawesome.com/88ede44493.js" crossorigin="anonymous"></script>
+    <title>Consult Atlas Virtual Assistant</title>
+</head>
+<body>
+    <div class="container-index">
+        <nav class="index-nav">
+            <img src="C:\Users\steve\Desktop\Ujatcare\atlas-frontend\statics\artificial-intelligence-3685928_1920.png" class="logo">
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Login</a></li>
+            </ul>
+        </nav>
+        <div class="text-box">
+            <p>VIRTUAL ASSISTANT</p>
+            <h1>ATLAS</h1>
+            <h3>AI POWERED HOMECARE VIRTUAL ASSISTANT</h3>
+            <div class="row">
+                <a href="">Upload a File</a>
+                <a href="">Chat with Atlas <span>&#x27F6;</span></a>
+                <span>Explore the knowledge in consulting services</span>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href=""><img src="C:\Users\steve\Desktop\Ujatcare\atlas-frontend\statics\icons8-linkedin-104.png" alt=""></a>
+            <a href=""><img src="C:\Users\steve\Desktop\Ujatcare\atlas-frontend\statics\icons8-twitterx-100.png" alt=""></a>
+            <a href=""><img src="C:\Users\steve\Desktop\Ujatcare\atlas-frontend\statics\icons8-instagram-100.png" alt=""></a>
+            <a href=""><img src="C:\Users\steve\Desktop\Ujatcare\atlas-frontend\statics\icons8-facebook-100.png" alt=""></a>
+        </div>
+    </div>
+    <div class="container-log">
+        <nav class="log-nav">
+            <img src="C:\Users\steve\Desktop\Ujatcare\atlas-frontend\statics\artificial-intelligence-3685928_1920.png" class="logo">
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Use Virtual Assistant</a></li>
+            </ul>
+        </nav>
+        <div class="form-box">
+            <h1 id="title">Register</h1>
+            <form action="">
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="" id="" placeholder="Name">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="" id="" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="" id="" placeholder="Password">
+                    </div>
+                    <p>Forgot password? <a href="">Click Here!</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="registerBtn">Register</button>
+                    <button type="button" id="loginBtn" class="disable">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <!--<nav class="chat-nav">
+            <img src="C:\Users\steve\Desktop\Ujatcare\UI-ujat-ai\statics\artificial-intelligence-3685928_1920.png" class="logo">
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Login</a></li>
+            </ul>
+        </nav>-->
+        <div class="chatbox">
+            <div class="col-1">
+                <div class="msg-row">
+                    <div class="msg-text">
+                        <h2>User's Name</h2>
+                        <p>some text</p>
+                    </div>
+                    <img src="C:\Users\steve\Desktop\Ujatcare\atlas-frontend\statics\unnamed.png" class="profile-pic">
+                </div>
+                <div class="msg-row msg-row2">
+                    <img src="C:\Users\steve\Desktop\Ujatcare\atlas-frontend\statics\unnamed.png" class="profile-pic">
+                    <div class="msg-text2">
+                        <h2>Atlas bot</h2>
+                        <p>some replay</p>
+                    </div>
+                </div>
+                <div class="msg-row">
+                    <div class="msg-text">
+                        <h2>User's Name</h2>
+                        <p>some text</p>
+                    </div>
+                    <img src="C:\Users\steve\Desktop\Ujatcare\atlas-frontend\statics\unnamed.png" class="profile-pic">
+                </div>
+                <div class="msg-row msg-row2">
+                    <img src="C:\Users\steve\Desktop\Ujatcare\atlas-frontend\statics\unnamed.png" class="profile-pic">
+                    <div class="msg-text2">
+                        <h2>Atlas bot</h2>
+                        <p>some replay</p>
+                    </div>
+                </div>
+                
+                <input class="input-box" type="text" placeholder="Type your question here">
+            </div>
+            <div class="col-2">
+                <h3>Chat History</h3>
+                <a href="" class="history-row">
+                    <div class="history-text">
+                        01-11-23 Conversation
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let registerBtn = document.getElementById("registerBtn");
+    let loginBtn = document.getElementById("loginBtn");
+    let nameField = document.getElementById("nameField");
+    let title = document.getElementById("title");
+
+    loginBtn.onclick = function(){
+        nameField.style.maxHeight = "0";
+        title.innerHTML = "Login";
+        registerBtn.classList.add('disable');
+        loginBtn.classList.remove("disable");
+    };
+
+    registerBtn.onclick = function(){
+        nameField.style.maxHeight = "60px";
+        title.innerHTML = "Register";
+        registerBtn.classList.remove('disable');
+        loginBtn.classList.add("disable");
+    };
+</script>
+</html>
